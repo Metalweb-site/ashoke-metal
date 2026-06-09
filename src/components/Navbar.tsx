@@ -3,13 +3,13 @@ import { motion } from 'motion/react';
 
 export default function Navbar({ isLoaded = true }: { isLoaded?: boolean }) {
   return (
-    <motion.nav 
+    <motion.nav
       initial={{ y: -100, opacity: 0 }}
       animate={isLoaded ? { y: 0, opacity: 1 } : { y: -100, opacity: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="absolute top-0 left-0 w-full z-50 py-4 px-6 md:px-12 flex justify-between items-center text-white font-sans min-h-20 lg:min-h-0"
     >
-      
+
       {/* Mobile Hamburger (Left on mobile) */}
       <button className="lg:hidden text-white hover:text-[var(--color-copper)] transition-colors p-2 -ml-2 z-20">
         <Menu size={28} strokeWidth={1.5} />
@@ -19,7 +19,7 @@ export default function Navbar({ isLoaded = true }: { isLoaded?: boolean }) {
       <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 lg:left-8 lg:top-4 lg:-translate-x-0 lg:-translate-y-0 z-10 w-[55px] h-[55px] md:w-20 md:h-20 lg:w-24 lg:h-24 pointer-events-none lg:pointer-events-auto">
         <div className="w-full h-full bg-transparent flex items-center justify-center overflow-hidden">
           {/* We use the logo image. User needs to upload it as logo.png in public */}
-          <img src="/logo-1.jpg" alt="Ashok Metal Logo" className="w-full h-full object-contain mix-blend-screen scale-[1.2] lg:scale-110 transform origin-center pointer-events-auto" />
+          <img src="/logo1.png" alt="Ashok Metal Logo" className="w-full h-full object-contain mix-blend-screen scale-[1.2] lg:scale-110 transform origin-center pointer-events-auto" />
         </div>
       </div>
 
