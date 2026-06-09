@@ -1,0 +1,6 @@
+{
+  "name": "Ashok Metals",
+  "description": "Premium copper utensils and divine idols store frontend.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
